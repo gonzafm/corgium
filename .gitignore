@@ -1,0 +1,5 @@
+corgium_core/go.mod
+corgium_core/main.go
+corgium_core/corgium.com/corgium_core/proto/corgium_core/corgium_core_grpc.pb.go
+corgium_core/corgium.com/corgium_core/proto/corgium_core/corgium_core.pb.go
+corgium_core/proto/corgium_core.proto
