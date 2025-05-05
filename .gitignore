@@ -3,3 +3,35 @@ corgium_core/main.go
 corgium_core/corgium.com/corgium_core/proto/corgium_core/corgium_core_grpc.pb.go
 corgium_core/corgium.com/corgium_core/proto/corgium_core/corgium_core.pb.go
 corgium_core/proto/corgium_core.proto
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env/
+
+# Test coverage reports
+htmlcov/
+.coverage
+*.cover
+
+# pytest cache
+.pytest_cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Distribution/build artifacts
+dist/
+build/
+*.egg-info/
+
+# Environment configuration
+.env
