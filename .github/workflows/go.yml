@@ -26,4 +26,6 @@ jobs:
         go build -v .
 
     - name: Test
-      run: go test -v .
+      run: |
+        cd training/palindrome/golang/
+        go test -v .
