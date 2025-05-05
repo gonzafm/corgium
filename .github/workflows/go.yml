@@ -20,10 +20,10 @@ jobs:
       uses: actions/setup-go@v4
       with:
         go-version: '1.23'
-    - run: cd training/palindrome/golang/
-    
     - name: Build
-      run: go build -v .
+      run: |
+        cd training/palindrome/golang/
+        go build -v .
 
     - name: Test
       run: go test -v .
