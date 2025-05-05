@@ -35,3 +35,4 @@ build/
 
 # Environment configuration
 .env
+training/palindrome/golang/palindrome
