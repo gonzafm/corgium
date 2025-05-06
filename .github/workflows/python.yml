@@ -2,11 +2,11 @@ name: Python
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
       - "training/python/**"
   pull_request:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
       - "training/python/**"
 

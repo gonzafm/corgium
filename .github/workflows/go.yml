@@ -2,11 +2,11 @@ name: Go
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
       - "training/palindrome/golang/**"
   pull_request:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
       - "training/palindrome/golang/**"
 
