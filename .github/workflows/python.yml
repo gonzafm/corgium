@@ -2,11 +2,11 @@ name: Python
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
       - "training/python/**"
   pull_request:
-    branches: [ "main" ]
+    branches: [ "*" ]
     paths:
       - "training/python/**"
 
@@ -28,5 +28,7 @@ jobs:
         pip install -r training/python/requirements.txt
 
     - name: Run Tests
+      env:
+        PYTHONPATH: training/python/src
       run: |
         pytest training/python/tests
