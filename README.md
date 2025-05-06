@@ -2,7 +2,7 @@
 
 Using this repo for building automations around LeetCode challenges
 
-Helps me keep my brain in new programing languajes
+Helps me keep my brain in new programming languages
 
 I may abandon them as I pinpoint my interest
 
