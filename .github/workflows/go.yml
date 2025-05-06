@@ -1,13 +1,14 @@
-# This workflow will build a golang project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
-
 name: Go
 
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - "training/palindrome/golang/**"
   pull_request:
     branches: [ "main" ]
+    paths:
+      - "training/palindrome/golang/**"
 
 jobs:
 
@@ -28,4 +29,6 @@ jobs:
     - name: Test
       run: |
         cd training/palindrome/golang/
-        go test -v .
+        go test -v .# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
