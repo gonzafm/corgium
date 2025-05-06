@@ -10,6 +10,7 @@ from palindrome import Solution
     (0, True),
     (12321, True),
     (12345, False),
+    (1234321, True),
 ])
 def test_is_palindrome(x, expected):
     solution = Solution()
