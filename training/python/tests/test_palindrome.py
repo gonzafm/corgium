@@ -6,7 +6,7 @@ from palindrome import Solution
     (-121, False),
     (10, False),
     (11, True),
-    (1221, True),
+    (2222, True),
     (0, True),
     (12321, True),
     (12345, False),
