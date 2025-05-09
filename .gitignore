@@ -36,3 +36,5 @@ build/
 # Environment configuration
 .env
 training/palindrome/golang/palindrome
+
+training/js/node_modules/

@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ "*" ]
+    paths:
+      - "training/js/**"
+  pull_request:
+    branches: [ "*" ]
+    paths:
+      - "training/js/**"
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [23.x]
+
+    steps:
+      # 1. Grab your code
+      - uses: actions/checkout@v3
+
+      # 2. Install Node and cache dependencies
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Build TypeScript
+      - name: Compile
+        run: npm run build
+        # assumes your package.json has:
+        #   "build": "tsc"
+
+      # 5. Run ts-jest tests
+      - name: Run tests
+        run: npm test
+        # assumes your package.json has:
+        #   "test": "jest --coverage"
