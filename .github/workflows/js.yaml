@@ -18,8 +18,6 @@ jobs:
       # 1. Grab your code
       - uses: actions/checkout@v3
 
-
-
       # 2. Install Node and cache dependencies
       - name: Use Node.js 
         uses: actions/setup-node@v3
@@ -32,6 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
             cd training/golang/
+            ls -al
             npm ci
 
       # 4. Build TypeScript
