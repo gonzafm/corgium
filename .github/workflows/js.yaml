@@ -28,11 +28,11 @@ jobs:
           cache: 'npm'
           cache-dependency-path: training/js/package-lock.json
             
-      - name: go to the right directory
-        run: cd training/js
       # 3. Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: |
+            cd training/golang/
+            npm ci
 
       # 4. Build TypeScript
       - name: Compile
