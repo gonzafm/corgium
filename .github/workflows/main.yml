@@ -49,7 +49,7 @@ jobs:
           ${{ runner.os }}-nx-
 
     - name: Build all projects
-      run: npx nx affected -t build --parallel
+      run: npx nx run-many --target=build --all --parallel
 
     - name: Test all projects
-      run: npx nx affected -t build --parallel
+      run: npx nx run-many --target=test --all --parallel
