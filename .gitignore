@@ -52,3 +52,5 @@ node_modules/
 training/jvm/bin/
 
 training/js/node_modules/
+
+tmp/
