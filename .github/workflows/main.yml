@@ -40,8 +40,16 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Cache Nx
+      uses: actions/cache@v3
+      with:
+        path: .nx/cache
+        key: ${{ runner.os }}-nx-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-nx-
+
     - name: Build all projects
-      run: npx nx run-many --target=build --all 
+      run: npx nx run-many --target=build --all --parallel
 
     - name: Test all projects
-      run: npx nx run-many --target=test --all 
+      run: npx nx run-many --target=test --all --parallel
