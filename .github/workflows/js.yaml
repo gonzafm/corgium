@@ -42,6 +42,6 @@ jobs:
       - name: Run tests
         run: |
             cd training/js/
-            npm test
+            npm test --config=jest.config.ts
         # assumes your package.json has:
         #   "test": "jest --coverage"
