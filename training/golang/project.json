@@ -1,0 +1,14 @@
+{
+  "name": "golang",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "training/golang",
+  "projectType": "application",
+  "targets": {
+    "clean": {
+      "executor": "@nx/go:run",
+      "options": {
+        "command": "build"
+      }
+    }
+  }
+}

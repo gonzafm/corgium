@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "golang": "training/golang",
+    "js": "training/js",
+    "python": "training/python",
+    "jvm": "training/jvm"
+  }
+}
