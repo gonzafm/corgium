@@ -37,7 +37,6 @@ build/
 .env
 training/palindrome/golang/palindrome
 
-<<<<<<< HEAD
 training/js/node_modules/
 
 # JVM especific files
@@ -51,8 +50,5 @@ node_modules/
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
 training/jvm/bin/
-=======
-training/js/node_modules/
->>>>>>> origin/main
 
 training/js/node_modules/
