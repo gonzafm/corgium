@@ -46,4 +46,7 @@ training/jvm/gradle
 .nx/workspace-data
 .nx/nxw.js
 node_modules/
-training/jvm/app/bin/
+
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
+training/jvm/bin/
