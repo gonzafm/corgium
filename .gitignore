@@ -40,6 +40,7 @@ training/palindrome/golang/palindrome
 training/js/node_modules/
 
 # JVM especific files
+training/jvm/bin
 training/jvm/gradle
 .nx/installation
 .nx/cache
@@ -49,8 +50,8 @@ node_modules/
 
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
-training/jvm/bin/
+
 
 training/js/node_modules/
 
-tmp/
+tmp/**
