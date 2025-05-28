@@ -38,3 +38,12 @@ build/
 training/palindrome/golang/palindrome
 
 training/js/node_modules/
+
+# JVM especific files
+training/jvm/gradle
+.nx/installation
+.nx/cache
+.nx/workspace-data
+.nx/nxw.js
+node_modules/
+training/jvm/app/bin/

@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "training/js/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "training/js/dist",
+        "main": "training/js/src/index.ts",
+        "tsConfig": "training/js/tsconfig.json"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "training/js/jest.config.ts"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "jvm",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "training/jvm/src",
+  "projectType": "application",
+  "targets": {
+    "clean": {
+      "executor": "@nx/gradle:run",
+      "options": {
+        "command": "build"
+      }
+    }
+  }
+}

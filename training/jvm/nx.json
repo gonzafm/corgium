@@ -1,0 +1,51 @@
+{
+  "installation": {
+    "version": "21.0.3",
+    "plugins": {
+      "@nx/gradle": "21.0.3"
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "nxCloudId": "682249836323882e5673abb7",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "test"
+        ]
+      }
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/gradle",
+      "options": {
+        "testTargetName": "test",
+        "classesTargetName": "classes",
+        "buildTargetName": "build"
+      }
+    }
+  ],
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*"
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/src/test/**/*"
+    ]
+  }
+}
