@@ -1,0 +1,55 @@
+name: Nx Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+        go-version: ['1.21']
+        java-version: ['21']
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Setup Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: ${{ matrix.go-version }}
+
+    - name: Setup Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: ${{ matrix.java-version }}
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Cache Nx
+      uses: actions/cache@v3
+      with:
+        path: .nx/cache
+        key: ${{ runner.os }}-nx-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-nx-
+
+    - name: Build all projects
+      run: npx nx affected -t build --parallel
+
+    - name: Test all projects
+      run: npx nx affected -t build --parallel
