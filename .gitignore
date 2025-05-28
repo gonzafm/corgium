@@ -42,6 +42,7 @@ training/js/node_modules/
 # JVM especific files
 training/jvm/bin
 training/jvm/gradle
+training/jvm/.gradle
 .nx/installation
 .nx/cache
 .nx/workspace-data
