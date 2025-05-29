@@ -14,6 +14,7 @@ jobs:
         node-version: [18.x]
         go-version: ['1.21']
         java-version: ['21']
+        python-version: ['3.13']
 
     steps:
     - uses: actions/checkout@v4
@@ -37,8 +38,15 @@ jobs:
         distribution: 'temurin'
         java-version: ${{ matrix.java-version }}
 
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
     - name: Install dependencies
-      run: npm ci
+      run: |
+        npm ci 
+        pip install uv
 
     - name: Cache Nx
       uses: actions/cache@v3
