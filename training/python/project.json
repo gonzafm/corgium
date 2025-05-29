@@ -8,7 +8,8 @@
     "build": {
       "executor": "@nxlv/python:run-commands",
       "options": {
-        "command": "uv run pytest"
+        "command": "uv run pytest",
+        "cwd": "training/python"
       }
     }
      
