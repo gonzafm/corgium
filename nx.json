@@ -44,6 +44,12 @@
         "lintTargetName": "lint",
         "tidyTargetName": "tidy"
       }
+    },
+    {
+      "plugin": "@nxlv/python",
+      "options": {
+        "packageManager": "uv"
+      }
     }
   ],
   "namedInputs": {

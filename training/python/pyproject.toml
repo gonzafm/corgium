@@ -1,0 +1,12 @@
+[project]
+name = "python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=8.3.5",
+]
+[tool.pytest.ini_options]
+testpaths = ["tests"]          # only look under tests/
+pythonpath = ["src"]           # add /src to import path :contentReference[oaicite:1]{index=1}
