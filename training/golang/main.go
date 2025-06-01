@@ -1,6 +1,7 @@
 package main
 
 import (
+	"corgium/training/golang/pkg/leetcode"
 	"fmt"
 	"os"
 	"strconv"
@@ -17,22 +18,9 @@ func main() {
 		fmt.Println("Error: Invalid number")
 		return
 	} else {
-		condition := isPalindrome(num)
+		condition := leetcode.IsPalindrome(num)
 		fmt.Println("Is the number a palindrome?", condition)
 	}
 }
 
 // isPalindrome checks if the given integer is a palindrome.
-func isPalindrome(x int) bool {
-	number := strconv.Itoa(x)
-	j := len(number)
-	correction := j % 2
-	for i := range j {
-		if i == j-i-correction {
-			return true
-		} else if number[i] != number[j-i-1] {
-			return false
-		}
-	}
-	return false
-}
