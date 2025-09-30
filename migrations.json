@@ -1,0 +1,99 @@
+{
+  "migrations": [
+    {
+      "version": "21.1.0-beta.2",
+      "description": "Adds **/nx-rules.mdc and **/nx.instructions.md to .gitignore if not present",
+      "implementation": "./src/migrations/update-21-1-0/add-gitignore-entry",
+      "package": "nx",
+      "name": "21-1-0-add-ignore-entries-for-nx-rule-files"
+    },
+    {
+      "version": "21.5.0-beta.2",
+      "description": "Migrate the legacy 'development' custom condition to a workspace-unique custom condition name.",
+      "factory": "./src/migrations/update-21-5-0/migrate-development-custom-condition",
+      "package": "@nx/js",
+      "name": "migrate-development-custom-condition"
+    },
+    {
+      "version": "21.3.0-beta.3",
+      "description": "Rename the CLI option `testPathPattern` to `testPathPatterns`.",
+      "implementation": "./src/migrations/update-21-3-0/rename-test-path-pattern",
+      "package": "@nx/jest",
+      "name": "rename-test-path-pattern"
+    },
+    {
+      "version": "21.3.0-beta.3",
+      "requires": {
+        "jest": ">=30.0.0"
+      },
+      "description": "Replace removed matcher aliases in Jest v30 with their corresponding matcher",
+      "implementation": "./src/migrations/update-21-3-0/replace-removed-matcher-aliases",
+      "package": "@nx/jest",
+      "name": "replace-removed-matcher-aliases"
+    },
+    {
+      "version": "21.1.2-beta.1",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.0 in build file",
+      "factory": "./src/migrations/21-1-2/change-plugin-version-0-1-0",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-0"
+    },
+    {
+      "version": "21.3.0-beta.0",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.2 in build file",
+      "factory": "./src/migrations/21-3-0/change-plugin-version-0-1-2",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-2"
+    },
+    {
+      "version": "21.3.11-beta.0",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.4 in build file",
+      "factory": "./src/migrations/21-3-11/change-plugin-version-0-1-4",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-4"
+    },
+    {
+      "version": "21.4.0-beta.12",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.5 in build file",
+      "factory": "./src/migrations/21-4-0/change-plugin-version-0-1-5",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-5"
+    },
+    {
+      "version": "21.4.1-beta.1",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.6 in build file",
+      "factory": "./src/migrations/21-4-1/change-plugin-version-0-1-6",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-6"
+    },
+    {
+      "version": "21.5.1-beta.5",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.7 in build file",
+      "factory": "./src/migrations/21-5-1/change-plugin-version-0-1-7",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-7"
+    },
+    {
+      "version": "21.6.1-beta.2",
+      "cli": "nx",
+      "description": "Change dev.nx.gradle.project-graph to version 0.1.8 in build file",
+      "factory": "./src/migrations/21-6-1/change-plugin-version-0-1-8",
+      "package": "@nx/gradle",
+      "name": "change-plugin-version-0-1-8"
+    }
+  ],
+  "nx-console": {
+    "initialGitRef": {
+      "ref": "be4824bb2c6dd1f68b68a40cc4ce8dd0c4ab6779",
+      "subject": "Bump form-data from 4.0.2 to 4.0.4 (#15)"
+    },
+    "targetVersion": "latest",
+    "confirmedPackageUpdates": true
+  }
+}
