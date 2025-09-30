@@ -158,12 +158,24 @@
             "type": "UPDATE"
           }
         ],
-        "ref": "57c21cfa41793d7b10672998bdf3c5c0220ec223",
+        "ref": "b916b5295b83eba042c0852afbc3a98a8082be75",
+        "nextSteps": []
+      },
+      "change-plugin-version-0-1-5": {
+        "type": "successful",
+        "name": "change-plugin-version-0-1-5",
+        "changedFiles": [
+          {
+            "path": "training/jvm/build.gradle.kts",
+            "type": "UPDATE"
+          }
+        ],
+        "ref": "793873dcdf55a05912d4eef09e428a2c8ebee2c6",
         "nextSteps": []
       }
     },
     "runningMigrations": [
-      "change-plugin-version-0-1-4"
+      "change-plugin-version-0-1-5"
     ]
   }
 }
