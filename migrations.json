@@ -119,12 +119,27 @@
             "type": "UPDATE"
           }
         ],
-        "ref": "8aa9a59086e7d39c682cec1c69b2f382c1c9a90f",
+        "ref": "c3fafcfb57c20f812dc4445f3c3b53c2b0517f7a",
+        "nextSteps": []
+      },
+      "replace-removed-matcher-aliases": {
+        "type": "skipped"
+      },
+      "change-plugin-version-0-1-0": {
+        "type": "successful",
+        "name": "change-plugin-version-0-1-0",
+        "changedFiles": [
+          {
+            "path": "training/jvm/build.gradle.kts",
+            "type": "UPDATE"
+          }
+        ],
+        "ref": "9b30793334efc10625247ada4c2d57a55e7a7fac",
         "nextSteps": []
       }
     },
     "runningMigrations": [
-      "rename-test-path-pattern"
+      "change-plugin-version-0-1-0"
     ]
   }
 }

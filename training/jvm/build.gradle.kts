@@ -1,7 +1,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
-    id("dev.nx.gradle.project-graph") version("+")
+    id("dev.nx.gradle.project-graph") version("0.1.0")
 }
 allprojects {
     apply {
