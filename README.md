@@ -10,7 +10,7 @@ I may abandon them as I pinpoint my interest
 
 The project uses NX to support multiple programming languages. To run all projects use
 
-nx run-many --all
+nx run-many --target=build
 
 ## Problems so far
 
