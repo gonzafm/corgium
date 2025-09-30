@@ -94,6 +94,37 @@
       "subject": "Bump form-data from 4.0.2 to 4.0.4 (#15)"
     },
     "targetVersion": "latest",
-    "confirmedPackageUpdates": true
+    "confirmedPackageUpdates": true,
+    "completedMigrations": {
+      "21-1-0-add-ignore-entries-for-nx-rule-files": {
+        "type": "successful",
+        "name": "21-1-0-add-ignore-entries-for-nx-rule-files",
+        "changedFiles": [],
+        "ref": "4387ce949cdaabc4746be683769298e5184814a2",
+        "nextSteps": []
+      },
+      "migrate-development-custom-condition": {
+        "type": "successful",
+        "name": "migrate-development-custom-condition",
+        "changedFiles": [],
+        "ref": "4387ce949cdaabc4746be683769298e5184814a2",
+        "nextSteps": []
+      },
+      "rename-test-path-pattern": {
+        "type": "successful",
+        "name": "rename-test-path-pattern",
+        "changedFiles": [
+          {
+            "path": "training/js/project.json",
+            "type": "UPDATE"
+          }
+        ],
+        "ref": "8aa9a59086e7d39c682cec1c69b2f382c1c9a90f",
+        "nextSteps": []
+      }
+    },
+    "runningMigrations": [
+      "rename-test-path-pattern"
+    ]
   }
 }
