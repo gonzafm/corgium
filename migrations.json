@@ -206,12 +206,9 @@
             "type": "UPDATE"
           }
         ],
-        "ref": "f7147ec32b15eec028d9ad1c7ee6ef42fdbd59fe",
+        "ref": "7c99a4fabb3fdc3de059f8a0dd9271789c4d6415",
         "nextSteps": []
       }
-    },
-    "runningMigrations": [
-      "change-plugin-version-0-1-8"
-    ]
+    }
   }
 }
