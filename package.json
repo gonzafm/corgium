@@ -8,10 +8,10 @@
     "@nxlv/python": "^21.0.0",
     "@types/jest": "30.0.0",
     "jest": "30.0.5",
-    "ts-jest": "29.4.4",
+    "jest-util": "30.0.5",
+    "ts-jest": "^29.4.4",
     "ts-node": "^10.9.2",
-    "typescript": "5.9.2",
-    "jest-util": "30.0.5"
+    "typescript": "5.9.2"
   },
   "scripts": {
     "test:js": "jest --config=training/js/jest.config.ts --runInBand"
