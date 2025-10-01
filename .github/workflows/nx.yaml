@@ -57,7 +57,7 @@ jobs:
           ${{ runner.os }}-nx-
 
     - name: Build all projects
-      run: npx nx run-many --target=build --all --parallel
+      run: npx nx run-many --target=build --all --parallel --verbose
 
     - name: Test all projects
-      run: npx nx run-many --target=test --all --parallel
+      run: npx nx run-many --target=test --all --parallel --verbose
