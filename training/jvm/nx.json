@@ -1,8 +1,8 @@
 {
   "installation": {
-    "version": "21.0.3",
+    "version": "21.6.2",
     "plugins": {
-      "@nx/gradle": "21.0.3"
+      "@nx/gradle": "21.6.2"
     }
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
