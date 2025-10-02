@@ -9,4 +9,4 @@ dependencies = [
 ]
 [tool.pytest.ini_options]
 testpaths = ["tests"]          # only look under tests/
-pythonpath = ["src"]           # add /src to import path :contentReference[oaicite:1]{index=1}
+pythonpath = ["leetcode"]           # add /src to import path :contentReference[oaicite:1]{index=1}
