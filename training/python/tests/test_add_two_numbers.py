@@ -36,5 +36,5 @@ def build_node(list) -> Optional[ListNode]:
         if current is None:
             current = ListNode(list[size - i - 1])
         else:
-            current = ListNode(list[size - i -1], current)
+            current = ListNode(list[size - i - 1], current)
     return current
