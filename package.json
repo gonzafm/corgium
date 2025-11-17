@@ -2,9 +2,9 @@
   "devDependencies": {
     "@naxodev/gonx": "^1.0.1",
     "@nx-go/nx-go": "^3.3.1",
-    "@nx/gradle": "21.6.2",
-    "@nx/jest": "21.6.2",
-    "@nx/js": "21.6.2",
+    "@nx/gradle": "22.0.3",
+    "@nx/jest": "22.0.3",
+    "@nx/js": "22.0.3",
     "@nxlv/python": "^21.0.0",
     "@types/jest": "30.0.0",
     "jest": "30.0.5",
@@ -15,5 +15,8 @@
   },
   "scripts": {
     "test:js": "jest --config=training/js/jest.config.ts --runInBand"
+  },
+  "dependencies": {
+    "nx": "^22.0.3"
   }
 }
