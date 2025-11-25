@@ -4,6 +4,7 @@
     "golang": "training/golang",
     "js": "training/js",
     "python": "training/python",
-    "jvm": "training/jvm"
+    "jvm": "training/jvm",
+    "dice_master": "dice_master"
   }
 }
