@@ -9,9 +9,8 @@ describe('App', () => {
   });
 
   it('should have a greeting as the title', () => {
-    const { getAllByText } = render(<App />);
-    expect(
-      getAllByText(new RegExp('Welcome dice_master', 'gi')).length > 0
-    ).toBeTruthy();
+    const { getByText } = render(<App />);
+    // The app header contains "Welcome to Dice Master"
+    expect(getByText(/Welcome to Dice Master/i)).toBeTruthy();
   });
 });
