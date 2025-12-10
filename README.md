@@ -1,4 +1,4 @@
-# Corgium 
+# Corgium Monorepo
 
 Using this repo for building automations around LeetCode challenges
 
