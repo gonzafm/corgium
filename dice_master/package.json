@@ -1,0 +1,10 @@
+{
+  "name": "dice_master",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
+    "e2e": "cd e2e && npm ci && npx playwright test"
+  }
+}
