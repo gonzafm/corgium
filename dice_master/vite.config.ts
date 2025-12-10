@@ -1,7 +1,6 @@
 /// <reference types='vitest' />
 
 export default async function () {
-  const { defineConfig } = await import('vite');
   const react = (await import('@vitejs/plugin-react')).default;
   const { nxViteTsPaths } = await import(
     '@nx/vite/plugins/nx-tsconfig-paths.plugin'
@@ -10,7 +9,7 @@ export default async function () {
     '@nx/vite/plugins/nx-copy-assets.plugin'
   );
 
-  return defineConfig(() => ({
+  return {
     root: __dirname,
     cacheDir: '../node_modules/.vite/dice_master',
     server: {
@@ -46,5 +45,5 @@ export default async function () {
         provider: 'v8' as const,
       },
     },
-  }));
+  };
 }
